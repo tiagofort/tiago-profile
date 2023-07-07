@@ -5,7 +5,7 @@
               color="#000000"
               :width="getWidth"
             >
-              <v-container class="fill-height hidden-sm-and-down">
+              <v-container class="fill-height hidden-xs-and-down">
                 <v-spacer></v-spacer>
                 <v-btn @click="scrollToSection(link.id_scrool)" v-for="link in links" :key="link.title" text class="white--text">
                   {{ link.title }}
