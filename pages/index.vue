@@ -2,28 +2,28 @@
   <v-container :max-width="getMaxWidth" class="transparent">
             <v-row justify="center" class="mb-5 transparent">
                 <v-col class="pa-0">
-                      <v-sheet id="home" height="100vh" class="pa-1 mt-10" color="transparent">
+                      <v-sheet id="home" height="900" class="pa-1 mt-10" color="transparent">
                           <AboutMe />
                       </v-sheet>
                 </v-col>
            </v-row> 
            <v-row justify="center" class="mb-5">
                 <v-col>
-                      <v-sheet id="skills" height="100vh" class="pa-1 mt-10" color="transparent">
+                      <v-sheet id="skills" height="900" class="pa-1 mt-10" color="transparent">
                           <Skills />
                       </v-sheet>
                 </v-col>
            </v-row> 
            <v-row justify="center" class="mb-5">
                 <v-col>
-                      <v-sheet id="projects" height="100vh" class="pa-1 mt-10" color="transparent">
+                      <v-sheet id="projects" height="900" class="pa-1 mt-10" color="transparent">
                           <Projects />
                       </v-sheet>
                 </v-col>
            </v-row>
            <v-row justify="center" class="mb-5">
                 <v-col>
-                      <v-sheet id="contact" height="80vh" class="pa-1 mt-10" color="transparent">
+                      <v-sheet id="contact" height="600" class="pa-1 mt-10" color="transparent">
                           <Contact />
                       </v-sheet>
                 </v-col>

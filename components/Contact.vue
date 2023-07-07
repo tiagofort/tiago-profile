@@ -56,7 +56,7 @@
                                 </v-list-item-avatar>
                             </v-col>
                         </v-list-item>
-                    </v-row>
+                   </v-row>
                 </v-card>
                 <v-card :width="getMaxWidth" height="auto" class="hidden-sm-and-up text-center pa-3">
                     <v-row>

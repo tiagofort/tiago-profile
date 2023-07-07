@@ -36,7 +36,7 @@
                     class="mt-12"
                   >
                     <v-list-item @click="scrollToSection(link.id_scrool)" v-for="link in links" :key="link.title">
-                      <v-list-item-title>{{ link.title }}</v-list-item-title>
+                      <v-list-item-title class="text-subtitle-1 ml-2">{{ link.title }}</v-list-item-title>
                     </v-list-item>
                   </v-list-item-group>
               </v-list>

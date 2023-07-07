@@ -20,11 +20,12 @@
                                         :elevation="hover ? 12 : 2"
                                         :class="{ 'on-hover': hover }"
                                         color="white"
+                                        class="pa-1"
                                     >
                                         <v-img
                                             contain
                                             :src="item.img"
-                                            height="225px"
+                                            height="200"
                                         >
                                             <v-expand-transition>
                                                 <div
@@ -32,28 +33,27 @@
                                                     class="d-flex transition-fast-in-fast-out grey darken-3 v-card--reveal text-h2 white--text"
                                                     style="height: 100%;"
                                                 >
-                                                    <v-card-title class="text-h6 black--text">
+                                                    <v-card-text>
                                                         <v-row
                                                             class="fill-height flex-column"
                                                             justify="space-between"
                                                         >
-                                                            <p class="mt-4 subheading text-center white--text">
+                                                            <p class="mt-2 subheading text-center white--text">
                                                                 {{ item.title }}
                                                             </p>
-                                                            <p class="mt-4 caption text-center white--text">
+                                                            <p class="caption text-center white--text">
                                                                 {{ item.resume }}
                                                             </p>
-
                                                             <div class="align-self-center">
                                                                 <v-btn
-                                                                        :class="{ 'show-btns': hover }"
+                                                                        class="my-button"
                                                                         color="white"
                                                                         icon
                                                                         x-large
                                                                         @click="openLink(item.git)"
                                                                 >
                                                                     <v-icon
-                                                                        :class="{ 'show-btns': hover }"
+                                                                        class="show-btns"
                                                                         :color="transparent"
                                                                         x-large
                                                                     >
@@ -61,14 +61,14 @@
                                                                     </v-icon>
                                                                 </v-btn>
                                                                 <v-btn
-                                                                        :class="{ 'show-btns': hover }"
+                                                                        class="my-button"
                                                                         color="white"
                                                                         icon
                                                                         x-large
                                                                         @click="openLink(item.site)"
                                                                 >
                                                                     <v-icon
-                                                                        :class="{ 'show-btns': hover }"
+                                                                        class="show-btns"
                                                                         :color="transparent"
                                                                         x-large
                                                                     >
@@ -77,7 +77,7 @@
                                                                 </v-btn>
                                                             </div>
                                                         </v-row>
-                                                    </v-card-title>
+                                                    </v-card-text>
                                                 </div>
                                             </v-expand-transition> 
                                         </v-img>
@@ -103,6 +103,7 @@
 
 <script>
 import lunalogo from '@/static/projects/logoLuna.svg';
+import tiagoprof from '@/static/projects/tiago-profile.png';
 export default {
     data () {
         return {
@@ -111,38 +112,23 @@ export default {
             items: 
             [
                 {
+                    title: 'Tiago Profile',
+                    resume: 'My professional page',
+                    git_icon: 'mdi-git', 
+                    git: 'https://github.com/tiagofort/tiago-profile',
+                    site_icon: 'mdi-share', 
+                    site: 'https://tiago-profile-35060e7961af.herokuapp.com/',
+                    img: tiagoprof
+                },
+                {
                     title: 'Luna Crystals API',
-                    resume: 'Luna Crystals API developed using NodeJs',
+                    resume: 'Luna Crystals API developed in NodeJs',
                     git_icon: 'mdi-git', 
                     git: 'https://github.com/tiagofort/luna-crystals-API',
                     site_icon: 'mdi-share', 
                     site: '',
                     img: lunalogo
                 },
-                {
-                    title: 'Luna Crystals API',
-                    git_icon: 'mdi-git', 
-                    git: 'https://github.com/tiagofort/luna-crystals-API',
-                    site_icon: 'mdi-share', 
-                    site: '',
-                    img: lunalogo
-                },
-                {
-                    title: 'Luna Crystals API',
-                    git_icon: 'mdi-git', 
-                    git: 'https://github.com/tiagofort/luna-crystals-API',
-                    site_icon: 'mdi-share', 
-                    site: '',
-                    img: lunalogo
-                },
-                {
-                    title: 'Luna Crystals API',
-                    git_icon: 'mdi-git', 
-                    git: 'https://github.com/tiagofort/luna-crystals-API',
-                    site_icon: 'mdi-share', 
-                    site: '',
-                    img: lunalogo
-                }
             ],
             transparent: 'rgba(44, 40, 24, 0.43)'
         } 
@@ -169,7 +155,6 @@ export default {
 </script>
 
 <style scoped>
-
 .show-btns {
   color: rgb(250, 248, 248) !important;
 }

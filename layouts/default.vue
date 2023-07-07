@@ -1,21 +1,21 @@
 <template>
   <v-app class="transparent">
-    <div class="stars"></div>
-    <div class="cloud"></div>
-    <MenuBar />
-        <v-main fluid class="transparent">
-            <v-container class="transparent">
-                <v-row class="transparent">
-                  <v-col
-                    cols="12"
-                    class="transparent pa-0"
-                  >
-                      <nuxt />
-                  </v-col>
-                </v-row>
-            </v-container> 
-        </v-main>
-    <Footer />
+      <div class="stars"></div>
+      <div class="cloud"></div>
+      <MenuBar />
+          <v-main fluid class="transparent">
+              <v-container class="transparent">
+                  <v-row class="transparent">
+                      <v-col
+                        cols="12"
+                        class="transparent pa-0"
+                      >
+                          <nuxt />
+                      </v-col>
+                  </v-row>
+              </v-container> 
+          </v-main>
+      <Footer />
   </v-app>    
 </template>
 

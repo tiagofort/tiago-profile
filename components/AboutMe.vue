@@ -19,7 +19,7 @@
                             </v-list-item-avatar>
                         </v-list-item>
                     </v-card>
-                    <v-card :width="getMaxWidth" height="auto" class="hidden-md-and-up text-center">
+                    <v-card :width="getMaxWidth" height="auto" class="hidden-md-and-up text-center" color="#000000">
                         <v-row>
                             <v-col class="pa-0 mt-5 text-center">
                                 <v-avatar size="200" class="avatar">
@@ -54,11 +54,12 @@ export default{
         name: 'Tiago Fortaleza Gai',
         definition: 'Full Stack Developer',
         resume: 'This page was developed with the intention of sharing a little of my professional experience,' +
-                ' my main skills and works. I have a degree in Information Systems and a postgraduate degree in' + 
+                ' my main skills and projects. I have a degree in Information Systems and a postgraduate degree in' + 
                 ' web development. I have about eight years of experience as a programmer, using mainly Java and'+
-                ' JavaScript as main languages. Currently I am only focused on JavaScript projects.' +
-                ' I would like to point out that I leave here a brief and superficial summary of who ' +
-                'I am as a person and as a professional. This is just the cover of the book, so please' + 
+                ' JavaScript as main languages. Currently I am only focused on JavaScript projects,' +
+                ' but I am always open and willing to new challenges. A new technology is nothing more'+
+                ' than a new opportunity to keep learning and evolving. I would like to point out that I leave here a brief' +
+                ' and superficial summary of who I am as a person and as a professional. This is just the cover of the book, so please' + 
                 ' don not judge my professional life book by its cover. Would be a pleasure to be able to' +
                 ' share in more detail who I am after opening the book.'
 
