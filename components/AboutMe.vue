@@ -15,7 +15,7 @@
                                 </v-list-item-content>
                             </v-list-item-content>
                             <v-list-item-avatar size="200" class="avatar">
-                                <img :src="avatar" alt="John">
+                                <img :src="avatar">
                             </v-list-item-avatar>
                         </v-list-item>
                     </v-card>
@@ -73,9 +73,11 @@ export default{
 </script>
 
 <style>
+
 .transparent {
     background-color: transparent;
 }
+
 .avatar {
     width: 100px;
     height: 100px;

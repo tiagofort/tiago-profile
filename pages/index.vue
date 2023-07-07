@@ -50,7 +50,9 @@ components: { AboutMe, Skills, Projects, Contact }
 </script>
 
 <style>
+
 .transparent {
 background-color: transparent;
 }
+
 </style>
