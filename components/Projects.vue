@@ -117,7 +117,7 @@ export default {
                     git_icon: 'mdi-git', 
                     git: 'https://github.com/tiagofort/tiago-profile',
                     site_icon: 'mdi-share', 
-                    site: 'https://tiago-profile-35060e7961af.herokuapp.com/',
+                    site: 'https://www.tiagofortgai.com',
                     img: tiagoprof
                 },
                 {

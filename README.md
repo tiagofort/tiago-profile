@@ -1,6 +1,6 @@
-# tiago-profile
+# Tiago Professional Page
 
-## Build Setup
+## My professional page to share my skills, projects and professional contact with interested parties.
 
 ```bash
 # install dependencies

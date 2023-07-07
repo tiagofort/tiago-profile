@@ -1,5 +1,5 @@
 <template>
-    <v-container class="pa-0">
+    <v-container class="pa-0" width="180">
         <v-btn x-large rounded :color="setcolor" :width="getWidth" height="60" class="zoom px-3">
                 <v-icon class="text-left" left :large="getIconSize">
                     {{ icon }}

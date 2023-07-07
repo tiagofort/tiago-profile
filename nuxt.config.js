@@ -3,7 +3,7 @@ import colors from 'vuetify/es5/util/colors'
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - tiago-profile',
+    titleTemplate: '%s - My professional page',
     title: 'Tiago Fortaleza Gai',
     htmlAttrs: {
       lang: 'en'
@@ -15,7 +15,7 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/laptop.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/mb.ico' }
     ]
   },
 
