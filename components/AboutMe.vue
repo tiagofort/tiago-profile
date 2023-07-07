@@ -19,7 +19,7 @@
                             </v-list-item-avatar>
                         </v-list-item>
                     </v-card>
-                    <v-card :width="getMaxWidth" height="auto" class="hidden-md-and-up text-center" color="#000000">
+                    <v-card :width="getMaxWidth" height="auto" class="hidden-md-and-up text-center" overflow-y-auto color="#000000">
                         <v-row>
                             <v-col class="pa-0 mt-5 text-center">
                                 <v-avatar size="200" class="avatar">
