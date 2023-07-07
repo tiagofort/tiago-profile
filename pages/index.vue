@@ -2,7 +2,7 @@
   <v-container :max-width="getMaxWidth" class="transparent">
             <v-row justify="center" class="mb-5 transparent">
                 <v-col class="pa-0">
-                      <v-sheet id="home" height="900" class="pa-1 mt-10" color="transparent">
+                      <v-sheet id="home" :height="getHeight" class="pa-1 mt-10" color="transparent">
                           <AboutMe />
                       </v-sheet>
                 </v-col>
@@ -38,9 +38,12 @@ import Projects from '@/components/Projects.vue';
 import Contact  from '@/components/Contact.vue';
 export default { 
 computed:{
-getMaxWidth (){
-  return this.$vuetify.breakpoint.width - (this.$vuetify.breakpoint.width * 0.2);
-}
+    getMaxWidth (){
+        return this.$vuetify.breakpoint.width - (this.$vuetify.breakpoint.width * 0.2);
+    },
+    getHeight(){
+        return this.$vuetify.breakpoint.xs ? "auto" : "1000"
+    }
 },
 components: { AboutMe, Skills, Projects, Contact }
 }

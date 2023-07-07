@@ -37,7 +37,7 @@
                         </v-row>
                         <v-row>
                             <v-col>
-                                <div class="text-subtitle-1 text-justify pa-2">{{ resume }}</div><br>
+                                <div class="text-subtitle-1 text-xs-caption text-justify pa-2">{{ resume }}</div><br>
                             </v-col>
                         </v-row>
                     </v-card>
