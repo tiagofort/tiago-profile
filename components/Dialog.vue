@@ -8,13 +8,13 @@
             <v-btn
                 color="white"
                 icon
-                x-large
+                :x-large="isXLarge"
                 v-bind="attrs"
                 v-on="on"
                 @click="copyToClipboard()"                                    
             >
                 <v-icon
-                    x-large
+                    :x-large="isXLarge"
                 >
                     mdi-email
                 </v-icon>
@@ -66,6 +66,7 @@ export default {
           console.error("Failed to copy text to clipboard:", error);
         });
     }
-  }
+  },
+  props: [ "isXLarge" ]
 }
 </script>

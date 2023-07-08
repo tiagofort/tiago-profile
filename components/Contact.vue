@@ -117,7 +117,7 @@
                                 </v-btn>
                             </v-col>
                             <v-col>
-                                <Dialog />
+                                <Dialog :isXLarge="true" />
                             </v-col>
                     </v-row>
                 </v-card>

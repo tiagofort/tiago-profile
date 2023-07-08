@@ -26,6 +26,18 @@
               :app="getApp"
               color="#121212"
             >
+              <v-sheet class="mt-1 pa-2" height="auto" color="#121212">
+                  <v-btn
+                    color="#BDBDBD"
+                    small
+                    fab
+                    right
+                    absolute
+                    @click="drawer = !drawer"
+                  >
+                      <v-icon>mdi-close</v-icon>
+                  </v-btn>
+              </v-sheet>
               <v-list
                 nav
                 dense
@@ -40,11 +52,56 @@
                     </v-list-item>
                   </v-list-item-group>
               </v-list>
+              <v-sheet class="mt-10 pa-3" color="#121212">
+                  <div class="mb-4">Get in Touch</div>
+                  <v-row class="pa-4 ml-2" align="center" justify="center">
+                    <v-col class="pa-0">
+                        <v-btn
+                          color="white"
+                          icon
+                          small
+                          @click="getTouch('https://www.linkedin.com/in/tiago-fortaleza-gai/')"                                        
+                        >
+                            <v-icon>
+                                mdi-linkedin
+                            </v-icon>
+                        </v-btn>
+                    </v-col>
+                    <v-col class="pa-0">
+                        <v-btn
+                          color="white"
+                          icon
+                          small  
+                          @click="getTouch('https://github.com/tiagofort')"                                  
+                        >
+                            <v-icon>
+                                mdi-git
+                            </v-icon>
+                        </v-btn>
+                    </v-col>
+                    <v-col class="pa-0">
+                        <v-btn
+                          color="white"
+                          icon
+                          small 
+                          @click="getTouch('https://wa.me/353830679963')"                                   
+                        >
+                            <v-icon>
+                                mdi-whatsapp
+                            </v-icon>
+                        </v-btn>
+                    </v-col>
+                    <v-col class="pa-0">
+                      <Dialog :isXLarge="false" />
+                    </v-col>
+                  </v-row>
+              </v-sheet>
             </v-navigation-drawer>
         </div>       
 </template>
 
 <script>
+import Dialog from '@/components/Dialog.vue';
 export default {
   data: () => ({
       links: 
@@ -85,6 +142,19 @@ export default {
       this.$vuetify.goTo(section, { duration: 1000, offset: 0 });
       this.drawer = false;
     },
-  }
+    getTouch(url){
+      window.open(url, '_blank');
+    }, 
+  },
+  components:{ Dialog }
 }
 </script>
+
+<style>
+  /* This is for documentation purposes and will not be needed in your application */
+  #lateral .v-btn--example {
+    bottom: 0;
+    position: absolute;
+    margin: 0 0 16px 16px;
+  }
+</style>
