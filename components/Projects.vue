@@ -1,9 +1,9 @@
 <template>
     <v-container  fill-height fluid class="transparent">
         <v-layout align-start justify-center>
-                <v-card width="900" class="rounded-xl" color="#000000">
-                    <v-card-title class="text-h4 px-0 hidden-sm-and-down">Projects</v-card-title>
-                    <v-card-title class="text-h6 px-0 hidden-sm-and-up">Projects</v-card-title>
+                <v-sheet :width="getWidth" class="rounded-xl transparent">
+                    <div class="text-h4 px-0 hidden-sm-and-down">Projects</div>
+                    <div class="text-h6 px-0 hidden-sm-and-up">Projects</div>
                     <v-row
                         class="fill-height text-left"
                         align="center"
@@ -96,7 +96,7 @@
                             light
                         ></v-pagination>
                     </v-row>
-                </v-card>
+                </v-sheet>
         </v-layout>
     </v-container>
 </template>
@@ -149,7 +149,10 @@ export default {
             const startIndex = (this.currentPage - 1) * this.itemsPerPage;
             const endIndex = startIndex + this.itemsPerPage;
             return this.items.slice(startIndex, endIndex);
-        },   
+        },
+        getWidth(){
+           return this.$vuetify.breakpoint.xs ? this.$vuetify.breakpoint.width - (this.$vuetify.breakpoint.width * 0.1) : "900"; 
+        }   
     },
 }
 </script>

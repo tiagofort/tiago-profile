@@ -1,8 +1,8 @@
 <template>
     <v-container  fill-height fluid class="transparent">
         <v-layout align-start justify-center>
-            <v-card width="900" class="rounded-xl text-center" color="#000000">
-                <v-card-title class="text-h4">Skills</v-card-title>
+            <v-sheet width="900" class="rounded-xl text-center transparent" color="#000000">
+                <div class="text-h4 text-left">Skills</div>
                     <div class="text-h5 px-0 hidden-xs-only text-center mb-5">Languages</div>
                     <div class="text-h6 px-0 hidden-sm-and-up text-center mb-5">Languages</div>
                     <v-row align="center" justify="center">
@@ -69,7 +69,7 @@
                             <Badge text="Git" icon="mdi-git" setcolor="#1697f6" />
                         </v-col>
                     </v-row>
-            </v-card>    
+            </v-sheet>    
         </v-layout>
     </v-container>
 </template>

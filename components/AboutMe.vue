@@ -1,7 +1,7 @@
 <template>
         <v-container  fill-height fluid class="transparent">
             <v-layout align-start justify-center>
-                    <v-card width="900" class="rounded-xl hidden-sm-and-down" color="#000000">
+                    <v-sheet width="900" class="rounded-xl hidden-sm-and-down transparent">
                         <v-list-item three-line>
                             <v-list-item-content class="pa-3">
                                 <v-list-item-title class="text-h2 text-md-h3 mb-1 ml-5">
@@ -18,8 +18,8 @@
                                 <img :src="avatar">
                             </v-list-item-avatar>
                         </v-list-item>
-                    </v-card>
-                    <v-card :width="getMaxWidth" height="auto" class="hidden-md-and-up text-center" overflow-y-auto color="#000000">
+                    </v-sheet>
+                    <v-sheet :width="getMaxWidth" height="auto" class="hidden-md-and-up text-center transparent">
                         <v-row>
                             <v-col class="pa-0 mt-5 text-center">
                                 <v-avatar size="200" class="avatar">
@@ -40,7 +40,7 @@
                                 <div class="text-subtitle-1 text-xs-caption text-justify pa-2">{{ resume }}</div><br>
                             </v-col>
                         </v-row>
-                    </v-card>
+                    </v-sheet>
             </v-layout>
         </v-container>
 </template>

@@ -1,10 +1,10 @@
 <template>
     <v-container  fill-height fluid class="transparent">
         <v-layout align-start justify-center>
-                <v-card width="900" class="rounded-xl hidden-xs-only" color="#000000">
+                <v-sheet width="900" class="rounded-xl hidden-xs-only transparent">
                    <v-card-title class="text-h3">Get in touch</v-card-title>
                    <v-row> 
-                        <v-list-item three-line>
+                        <v-list-item three-line class="transparent">
                             <v-col>
                                 <v-btn
                                     color="white"
@@ -57,8 +57,8 @@
                             </v-col>
                         </v-list-item>
                    </v-row>
-                </v-card>
-                <v-card :width="getMaxWidth" height="auto" class="hidden-sm-and-up text-center pa-3">
+                </v-sheet>
+                <v-sheet :width="getMaxWidth" height="auto" class="hidden-sm-and-up text-center pa-3 transparent">
                     <v-row>
                         <v-col class="pa-0 mt-5 text-center">
                             <v-avatar tile size="200" class="avatar">
@@ -120,7 +120,7 @@
                                 <Dialog class="mr-1" />
                             </v-col>
                     </v-row>
-                </v-card>
+                </v-sheet>
         </v-layout>
     </v-container>
 </template>
