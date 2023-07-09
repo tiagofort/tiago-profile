@@ -1,5 +1,5 @@
 <template>
-    <v-footer :width="getWidth" absolute  color="#000000" class="ml-n5">
+    <v-footer :width="getWidth" absolute  color="#000000">
       <v-spacer></v-spacer>
         <span>Tiago Fortaleza Gai&copy; - {{ new Date().getFullYear() }}</span>
       <v-spacer></v-spacer>
