@@ -53,16 +53,15 @@
                   </v-list-item-group>
               </v-list>
               <v-sheet class="mt-10 pa-3" color="#121212">
-                  <div class="mb-4">Get in Touch</div>
-                  <v-row class="pa-4 ml-2" align="center" justify="center">
+                  <div class="mb-4 text-subtitle-1">Get in Touch</div>
+                  <v-row class="pa-3" align="center" justify="center">
                     <v-col class="pa-0">
                         <v-btn
                           color="white"
                           icon
-                          small
                           @click="getTouch('https://www.linkedin.com/in/tiago-fortaleza-gai/')"                                        
                         >
-                            <v-icon>
+                            <v-icon x-large>
                                 mdi-linkedin
                             </v-icon>
                         </v-btn>
@@ -70,11 +69,10 @@
                     <v-col class="pa-0">
                         <v-btn
                           color="white"
-                          icon
-                          small  
+                          icon  
                           @click="getTouch('https://github.com/tiagofort')"                                  
                         >
-                            <v-icon>
+                            <v-icon x-large>
                                 mdi-git
                             </v-icon>
                         </v-btn>
@@ -82,17 +80,16 @@
                     <v-col class="pa-0">
                         <v-btn
                           color="white"
-                          icon
-                          small 
+                          icon 
                           @click="getTouch('https://wa.me/353830679963')"                                   
                         >
-                            <v-icon>
+                            <v-icon x-large>
                                 mdi-whatsapp
                             </v-icon>
                         </v-btn>
                     </v-col>
                     <v-col class="pa-0">
-                      <Dialog :isXLarge="false" />
+                      <Dialog />
                     </v-col>
                   </v-row>
               </v-sheet>

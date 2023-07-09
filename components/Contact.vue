@@ -77,8 +77,8 @@
                         <v-col>
                                 <v-btn
                                     color="white"
+                                    class="mr-1"
                                     icon
-                                    x-large
                                     @click="getTouch('https://www.linkedin.com/in/tiago-fortaleza-gai/')"                                        
                                 >
                                     <v-icon
@@ -91,8 +91,8 @@
                             <v-col>
                                 <v-btn
                                     color="white"
-                                    icon
-                                    x-large  
+                                    class="mr-1"
+                                    icon 
                                     @click="getTouch('https://github.com/tiagofort')"                                  
                                 >
                                     <v-icon
@@ -105,8 +105,8 @@
                             <v-col>
                                 <v-btn
                                     color="white"
-                                    icon
-                                    x-large 
+                                    class="mr-1"
+                                    icon 
                                     @click="getTouch('https://wa.me/353830679963')"                                   
                                 >
                                     <v-icon
@@ -117,7 +117,7 @@
                                 </v-btn>
                             </v-col>
                             <v-col>
-                                <Dialog :isXLarge="true" />
+                                <Dialog class="mr-1" />
                             </v-col>
                     </v-row>
                 </v-card>

@@ -8,13 +8,12 @@
             <v-btn
                 color="white"
                 icon
-                :x-large="isXLarge"
                 v-bind="attrs"
                 v-on="on"
                 @click="copyToClipboard()"                                    
             >
                 <v-icon
-                    :x-large="isXLarge"
+                    x-large
                 >
                     mdi-email
                 </v-icon>
@@ -67,6 +66,6 @@ export default {
         });
     }
   },
-  props: [ "isXLarge" ]
+  props: [ "param" ]
 }
 </script>
