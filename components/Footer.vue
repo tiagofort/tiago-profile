@@ -1,5 +1,5 @@
 <template>
-    <v-footer :width="getWidth" absolute  color="#000000">
+    <v-footer width="auto" absolute  color="#000000">
       <v-spacer></v-spacer>
         <span>Tiago Fortaleza Gai&copy; - {{ new Date().getFullYear() }}</span>
       <v-spacer></v-spacer>
@@ -10,10 +10,5 @@
 export default {
   data: () => ({
   }),
-  computed:{
-    getWidth(){
-      return this.$vuetify.breakpoint.width;
-    }
-  }
 }
 </script>
