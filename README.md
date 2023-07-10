@@ -1,69 +1,156 @@
 # Tiago Professional Page
 
-## My professional page to share my skills, projects and professional contact with interested parties.
+### My professional page to share my skills, projects and professional contact with interested parties.
 
-```bash
-# install dependencies
-$ npm install
+![alt text for screen readers](/static/readme/responsive_screenshoot.png "Text to show on mouseover")
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+## Content
 
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
-```
-
-For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
-
-## Special Directories
-
-You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
-
-### `assets`
-
-The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
-
-### `components`
-
-The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
-
-### `layouts`
-
-Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
+1. [Installation](#1-resume) <br/>
+2. [Structure](#2-structure) <br/>
+3. [Components](#3-components) <br/>
+   3.1. [AboutMe.vue](#31-aboutmevue) <br/>
+   3.2. [Badge.vue](#32-badgevue) <br/>
+   3.3. [Contact.vue](#33-contactvue) <br/>
+   3.4. [Dialog.vue](#34-dialogvue) <br/>
+   3.5. [Footer.vue](#35-footervue) <br/>
+   3.6. [MenuBar.vue](#36-menubarvue) <br/>
+   3.7. [Projects.vue](#37-projectsvue) <br/>
+   3.8. [Skills.vue](#38-skillsvue) <br/> 
+4. [Layouts](#4-layouts) <br/>
+   4.1. [defaul.vue](#41-defaultvue) <br/> 
+   4.2. [error.vue](#42-errorvue) <br/> 
+5. [Pages](#5-pages) <br/>
+   5.1. [index.vue](#51-indexvue) <br/> 
+6. [Static](#6-static) <br/>
+   3.8. [avatar](#61-avatar) <br/> 
+   3.8. [contact](#62-contact) <br/> 
+   3.8. [projects](#63-projects) <br/> 
+   3.8. [readme](#64-readme) <br/> 
+7. [Frameworks and Libraries ](#7-technologies-used) <br/>   
 
 
-### `pages`
 
-This directory contains your application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
+## 1. Resume
+This page was developed with the aim of briefly highlighting who I am professionally, my experience and skills. The page was basically developed using VueJs and frameworks.
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
+## 2. Structure
 
-### `plugins`
+├── **assets** <br/>
+│ ├── **variables.scss** <br/>
+├── **components** <br/>
+│ ├── **AboutMe.vue** <br/>
+│ ├── **Badge.vue** <br/>
+│ ├── **Contact.vue** <br/>
+│ ├── **Dialog.vue** <br/>
+│ ├── **Footer.vue** <br/>
+│ ├── **MenuBar.vue** <br/>
+│ ├── **Projects.vue** <br/>
+│ ├── **Skills.vue** <br/>
+├── **layouts** <br/>
+│ ├── **default.vue** <br/>
+│ ├── **error.vue** <br/>
+├── **pages** <br/>
+│ ├── **index.vue** <br/>
+├── **static** <br/>
+│ ├── **avatar** <br/>
+│ │ ├── **avatar2.js** <br/>
+│ ├── **contact** <br/>
+│ │ ├── **contact.png** <br/>
+│ ├── **projects** <br/>
+│ │ ├── **logoLuna.svg** <br/>
+│ │ ├── **tiago-profile.png** <br/>
+│ ├── **readme** <br/>
+│ │ ├── **responsive_screenshoot.png** <br/>
+│ ├── **mb.ico** <br/>
+├── **store** <br/>
+│ ├── **README.md** <br/>
+├── **.editorconfig** <br/>
+├── **.gitignore** <br/>
+├── **nuxt.config.js** <br/>
+├── **package-lock.json** <br/>
+├── **package.json** <br/>
+├── **README.md** <br/>
+├── **tsconfig.json** <br/>
 
-The plugins directory contains JavaScript plugins that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
+## 3. Components
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/plugins).
+### 3.1. AboutMe.vue
 
-### `static`
+Component that makes up the "Home" section in index.vue. It basically contains name, title and a brief professional introduction.
 
-This directory contains your static files. Each file inside this directory is mapped to `/`.
+### 3.2. Badge.vue
 
-Example: `/static/robots.txt` is mapped as `/robots.txt`.
+Component that contains the layout of the buttons used to populate the skills section. This component is used inside the Skills.vue component.
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
+### 3.3. Contact.vue
 
-### `store`
+Component that makes up the "Get in touch" section in index.vue. It basically provides all means of contact.
 
-This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
+### 3.4. Dialog.vue
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
+Dialog Component responsible for copying the contact e-mail to the Clip Board and sending an informative message to the user.
+
+### 3.5. Footer.vue
+
+Component that makes up the footer of the page. Invoked in Default.vue
+
+### 3.6. MenuBar.vue
+
+Component that makes up the options menu. It has two modes, one for small and up screens and one for extra small screens.
+
+## 3.7. Projects.vue
+
+Component that makes up the projects section in index.vue. Basically it has all the projects developed and the option to access github and the website.
+
+## 3.8. Skills.vue
+
+Component that makes up the Skills section in index.vue. basically includes all mastered languages, libraries and frameworks.
+
+## 4. Layouts
+
+### 4.1. Default.vue
+
+Contains the default site structure. Here the positions of the menu bar, footer and background are defined.
+
+
+### 4.2. Error.vue 
+
+Error page layout returned when an error is found in the source code.
+
+## 5. Pages
+
+### 5.1. Index.vue
+
+Root file containing the home page structure. Basically constituted by 4 droughts. Are they:
+- Home (or Abour Me)
+- Skills
+- Projects
+- Contact
+
+## 6. Static
+
+### 6.1. Avatar
+
+Photo used in the Avatar component in the home or about me section.
+
+### 6.2. Contact 
+
+Image used in the Get in touch section.
+
+### 6.3. Projects
+
+Illustrative images of the developed projects.
+
+### 6.4. Readme
+
+Image attached in the README used to illustrate how responsive the site is.
+
+## 7. Frameworks and Libraries used
+
+- Nuxt 2
+- Vuetify 2
+- CSS
+- TypeScript
+
+
