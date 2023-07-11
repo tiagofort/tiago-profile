@@ -80,7 +80,7 @@
                                                     </v-card-text>
                                                 </div>
                                             </v-expand-transition> 
-                                        </v-img>
+                                        </v-img>  
                                     </v-card>
                                 </v-hover>
                             </v-col>
@@ -124,7 +124,7 @@ export default {
                     title: 'Luna Crystals API',
                     resume: 'Luna Crystals API developed in NodeJs',
                     git_icon: 'mdi-git', 
-                    git: 'https://github.com/tiagofort/luna-crystals-API',
+                    git: 'https://github.com/tiagofort/luna-crystals-API-exhibition',
                     site_icon: 'mdi-share', 
                     site: '',
                     img: lunalogo
@@ -170,4 +170,5 @@ export default {
   position: absolute;
   width: 100%;
 }
+
 </style>
