@@ -129,6 +129,24 @@ export default {
                     site: '',
                     img: lunalogo
                 },
+                {
+                    title: 'Luna Crystals ADM',
+                    resume: 'Luna Crystals Admin developed using Vue/Vuetify',
+                    git_icon: 'mdi-git', 
+                    git: 'https://github.com/tiagofort/luna-adm-APP-exhibition',
+                    site_icon: 'mdi-share', 
+                    site: 'https://luna-adm-app-exhibition-54f540dbf795.herokuapp.com/',
+                    img: lunalogo
+                },
+                {
+                    title: 'Luna Crystals APP',
+                    resume: 'Luna Crystals APP developed using Vue/Vuetify',
+                    git_icon: 'mdi-git', 
+                    git: 'https://github.com/tiagofort/luna-user-APP-exhibition',
+                    site_icon: 'mdi-share', 
+                    site: 'https://luna-user-app-exhibition-977922c7e267.herokuapp.com/',
+                    img: lunalogo
+                }
             ],
             transparent: 'rgba(44, 40, 24, 0.43)'
         } 
