@@ -104,6 +104,7 @@
 <script>
 import lunalogo from '@/static/projects/logoLuna.svg';
 import tiagoprof from '@/static/projects/tiago-profile.png';
+import lunapp from '@/static/projects/luna-app.png';
 export default {
     data () {
         return {
@@ -145,7 +146,7 @@ export default {
                     git: 'https://github.com/tiagofort/luna-user-APP-exhibition',
                     site_icon: 'mdi-share', 
                     site: 'https://luna-user-app-exhibition-977922c7e267.herokuapp.com/',
-                    img: lunalogo
+                    img: lunapp
                 }
             ],
             transparent: 'rgba(44, 40, 24, 0.43)'
