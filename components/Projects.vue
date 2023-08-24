@@ -145,7 +145,7 @@ export default {
                     git_icon: 'mdi-git', 
                     git: 'https://github.com/tiagofort/luna-user-APP-exhibition',
                     site_icon: 'mdi-share', 
-                    site: 'https://luna-user-app-exhibition-977922c7e267.herokuapp.com/',
+                    site: 'https://www.luna-crystals.com',
                     img: lunapp
                 }
             ],
