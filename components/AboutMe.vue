@@ -46,7 +46,7 @@
 </template>
 
 <script>
-import avatar from '@/static/avatar/avatar2.png';
+import avatar from '@/static/avatar/badge.jpg';
 export default{
     data: () => ({ 
         avatar: avatar,
